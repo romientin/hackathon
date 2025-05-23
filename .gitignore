@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+ENV.bak/
+env.bak/
+
+# Sensitive files
+credentials.json
+*.env
+token.json # Or whatever you name your token storage
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo 
+*.txt
