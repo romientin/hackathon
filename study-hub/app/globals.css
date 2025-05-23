@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(var(--bg-gradient-start)),
+    hsl(var(--bg-gradient-end))
+  );
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 330 25% 97%;
+    --bg-gradient-start: 340 30% 99%;
+    --bg-gradient-end: 315 30% 96%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 330 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 330 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 330 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 330 40% 90%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 330 31.8% 91.4%;
+    --input: 330 31.8% 91.4%;
+    --ring: 330 83% 53%;
+    --radius: 0.5rem;
+
+    /* Custom gradient colors */
+    --gradient-blue-start: 340 70% 92%;
+    --gradient-blue-end: 340 70% 85%;
+    --gradient-purple-start: 315 70% 92%;
+    --gradient-purple-end: 315 70% 85%;
+    --gradient-pink-start: 330 70% 92%;
+    --gradient-pink-end: 330 70% 85%;
+  }
+
+  .dark {
+    --background: 330 25% 5%;
+    --bg-gradient-start: 340 30% 7%;
+    --bg-gradient-end: 315 30% 3%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    /* Custom gradient colors - dark mode */
+    --gradient-blue-start: 221 70% 25%;
+    --gradient-blue-end: 221 70% 20%;
+    --gradient-purple-start: 270 70% 25%;
+    --gradient-purple-end: 270 70% 20%;
+    --gradient-pink-start: 330 70% 25%;
+    --gradient-pink-end: 330 70% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+/* Custom gradient classes */
+.gradient-blue {
+  @apply bg-gradient-to-br;
+  background-color: hsl(var(--gradient-blue-start));
+  background-image: linear-gradient(to bottom right, 
+    hsl(var(--gradient-blue-start)), 
+    hsl(var(--gradient-blue-end))
+  );
+}
+
+.gradient-purple {
+  @apply bg-gradient-to-br;
+  background-color: hsl(var(--gradient-purple-start));
+  background-image: linear-gradient(to bottom right, 
+    hsl(var(--gradient-purple-start)), 
+    hsl(var(--gradient-purple-end))
+  );
+}
+
+.gradient-pink {
+  @apply bg-gradient-to-br;
+  background-color: hsl(var(--gradient-pink-start));
+  background-image: linear-gradient(to bottom right, 
+    hsl(var(--gradient-pink-start)), 
+    hsl(var(--gradient-pink-end))
+  );
+}
+
