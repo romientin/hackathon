@@ -11,7 +11,7 @@ TestHub is a hackathon project designed to help students prepare for exams more 
   The system adapts to user performance and confidence levels to highlight areas that need more attention.
 
 - 🔍 **Thematic Categorization**  
-  Study content is grouped by topic and difficulty for targeted learning.
+  Study content is grouped by topic, professor and year for targeted learning.
 
 - 💾 **Supabase Backend**  
   Uses Supabase for efficient data storage, authentication, and real-time updates.
